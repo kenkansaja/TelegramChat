@@ -7,6 +7,20 @@
     "TOKEN": {
       "description": "Dapatkan di @botfather",
       "value": ""
+    },
+    "OWNER": {
+      "description": "Isi dengan username kalian tanpa tanda @",
+      "value": "kenkanasw"
+    },
+    "GROUP": {
+      "description": "Isi dengan username group kalian tanpa tanda @ kalau gak punya gak usah isi",
+      "required": false,
+      "value": "musikkugroup"
+    },
+    "CHANNEL": {
+      "description": "Isi dengan username channel kalian tanpa tanda @ kalau gak punya gak usah isi",
+      "required": false,
+      "value": "musikkuchannel"
     }
   }
 }

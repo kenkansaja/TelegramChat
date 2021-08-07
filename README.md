@@ -5,11 +5,11 @@
 
 <p align="center">
   <a href="https://github.com/kenkannih/TelegramChat/fork">
-    <img src="https://img.shields.io/github/forks/kenkansaja/TelegramChat?label=Fork&style=social">
+    <img src="https://img.shields.io/github/forks/kenkansaja/TelegramChat?style=plastic&logo=github&logoColor=red"width="100" height="40">
     
   </a>
   <a href="https://github.com/kenkannih/TelegramChat">
-    <img src="https://img.shields.io/github/stars/kenkansaja/TelegramChat?style=social">
+    <img src="https://img.shields.io/github/stars/kenkansaja/TelegramChat?style=plastic&logo=github&logoColor=red"width="100" height="40">
   </a>
 </p>  
 

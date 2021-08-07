@@ -20,7 +20,7 @@ def inline_menu():
                   [
                     [InlineKeyboardButton(text = '🔵 ᴏᴡɴᴇʀ', url = f't.me/{OWNER}')],
                     [InlineKeyboardButton(text = '👥 ɢʀᴏᴜᴘ', url=f'https://t.me/{GROUP}')],
-                     [InlineKeyboardButton(text = 'ᴄʜᴀɴɴᴇʟ 📣', url=f'https://t.me/{CHANNEL}')]
+                    [InlineKeyboardButton(text = 'ᴄʜᴀɴɴᴇʟ 📣', url=f'https://t.me/{CHANNEL}')]
                 ]
         )
     menu = types.InlineKeyboardMarkup()
@@ -230,3 +230,4 @@ if __name__ == '__main__':
     recovery_data()
     bot.stop_polling()
     bot.polling(none_stop=True)
+    print('BOT SUDAH AKTIF')

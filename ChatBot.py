@@ -4,7 +4,7 @@ from telebot import types
 
 from Messages import *
 from dataEgine import *
-from config import TOKEN
+from config import TOKEN, GROUP, CHANNEL, OWNER
 
 access_token = TOKEN
 bot = telebot.TeleBot(access_token)
@@ -16,6 +16,13 @@ def inline_menu():
     :return: InlineKeyboardMarkup
     """
     callback = types.InlineKeyboardButton(text='\U00002709 New chat', callback_data='NewChat')
+    kenkan = types.InlineKeyboardMarkup(
+                  [
+                    [InlineKeyboardButton(text = '🔵 ᴏᴡɴᴇʀ', url = f't.me/{OWNER}')],
+                    [InlineKeyboardButton(text = '👥 ɢʀᴏᴜᴘ', url=f'https://t.me/{GROUP}')],
+                     [InlineKeyboardButton(text = 'ᴄʜᴀɴɴᴇʟ 📣', url=f'https://t.me/{CHANNEL}')]
+                ]
+        )
     menu = types.InlineKeyboardMarkup()
     menu.add(callback)
 

@@ -1,9 +1,9 @@
 m_start = 'Halo!\nAnda berada dalam obrolan kencan anonim!\n'\
                'Tekan tombol di bawah untuk mulai mengobrol dengan lawan bicara.'\
-               'Jika Anda ingin mengenal seseorang lebih baik - tekan tombol suka dan dengan simpati timbal balik'\
+               'Jika Anda ingin mengenal seseorang lebih baik tekan tombol suka dan dengan simpati timbal balik '\
                'Anda akan dapat mengetahui nama panggilan mitra. Jika lawan bicara tidak sesuai dengan keinginan Anda,'\
                'lalu tekan tombol tidak suka dan mulai obrolan baru.\n'\
-               'PERHATIAN! Agar bot berhasil bekerja, Anda harus memiliki nama panggilan,'\
+               '\n**PERHATIAN!** \nAgar bot berhasil bekerja, Anda harus memiliki nama panggilan,'\
                'periksa pengaturan Anda dan pastikan Anda telah mencantumkannya!\n'\
                'Untuk menghentikan bot, panggil perintah /stop.'\
                'Harap dicatat bahwa semua data Anda akan dihapus, jika tidak, Anda akan tetap berada di database.'

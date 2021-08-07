@@ -6,7 +6,7 @@ from Messages import *
 from dataEgine import *
 from config import TOKEN
 
-access_token = 'TOKEN'
+access_token = TOKEN
 bot = telebot.TeleBot(access_token)
 
 

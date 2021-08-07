@@ -1,0 +1,12 @@
+{
+  "name": "TelegramChat",
+  "description": "Bot anonymous chat.",
+  "repository": "https://github.com/kenkansaja/TelegramChat",
+  "logo": "https://telegra.ph/file/de3e9d2a021c2ac516b12.jpg",
+  "env": {
+    "TOKEN": {
+      "description": "Dapatkan di @botfather",
+      "value": ""
+    }
+  }
+}

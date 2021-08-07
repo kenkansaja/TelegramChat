@@ -1,11 +1,12 @@
+import os
 import telebot
 from telebot import types
 
 from Messages import *
 from dataEgine import *
+from config import TOKEN
 
-
-access_token = 'YOUR_TOKEN'
+access_token = 'TOKEN'
 bot = telebot.TeleBot(access_token)
 
 

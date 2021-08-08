@@ -30,5 +30,5 @@ dislike_str = '⛔ Exit'
 like_str = '📠 Kirim Kontak'
 
 def m_all_like (x):
-    return 'Nih kak' + 'username:' + str (x)
+    return 'Nih kak ' + 'username : @' + str (x)
 

@@ -29,10 +29,6 @@ dislike_str = '⛔ Exit'
 
 like_str = '📠 Kontak'
 
-user_id = message.from_user.id
-user_name = message.from_user.first_name
-rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
-
 def m_all_like (x):
-    return "rpk"
+    return "Nih kak 'Username:' + str (x)"
 

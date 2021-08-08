@@ -29,6 +29,16 @@ Ini adalah repo untuk random chat bot atau biasa di kenal sebagai Anonymous Chat
 <a href="https://t.me/kenkanasw"><img src="https://img.shields.io/badge/OWNER KAN-blue?style=for-the-badge&logo=Telegram" /></a>
 <a href="https://t.me/musikkugroup"><img src="https://img.shields.io/badge/SUPPORT GROUP-black?style=for-the-badge&logo=Telegram" /></a>
 
+---
+### ✔️ FITUR SUPPORT
+
+- [X] TEXT
+- [X] FOTO
+- [X] VIDEO
+- [X] STICKER
+- [X] PESAN SUARA
+- [X] PESAN TERUSAN
+---
 ## CREDIT
 * [KEN KAN](https://github.com/kenkansaja/TelegramChat)
 

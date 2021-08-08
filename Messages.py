@@ -19,7 +19,7 @@ m_like = '✅ Anda mengerimkan username kepada lawan bicara!\n\n✅ You send the
 
 m_dislike_user = 'Obrolan Telah Berakhir\n\nChat Has Ended'
 
-m_dislike_user_to = 'Lawan tidak menyukai Anda, Maaf\n\nThe opponent doesnt like you sorry'
+m_dislike_user_to = '⛔ Lawan bicara anda meninggalkan obrolan\n\n⛔ Your interlocutor leaves the chat'
 
 m_send_some_messages = 'Bot tidak bisa meneruskan pesan dari bot\n\nThe bot could not continue the pan from the bot'
 

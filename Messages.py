@@ -18,7 +18,7 @@ m_like = '✅ Pilihan yang bagus!\n✅ Great choice'
 
 m_dislike_user = 'Obrolan Telah Berakhir\nChat Has Ended'
 
-m_dislike_user_to = 'Lawan tidak menyukai Anda, Maaf\nThe opponent doesn't like you sorry'
+m_dislike_user_to = 'Lawan tidak menyukai Anda, Maaf\nThe opponent doesnt like you sorry'
 
 m_send_some_messages = 'Bot tidak bisa meneruskan pesan dari bot\nThe bot could not continue the pan from the bot'
 

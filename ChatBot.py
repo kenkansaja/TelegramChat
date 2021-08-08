@@ -117,7 +117,7 @@ def echo(message):
 
         update_user_like(user_to_id)
 
-        if communications[user_id]['like'] == communications[user_to_id]['like']:
+        if communications[user_id]['like']:
             bot.send_message(user_id, m_all_like(communications[user_id]['UserName']))
             bot.send_message(user_to_id, m_all_like(communications[user_to_id]['UserName']))
             flag = True

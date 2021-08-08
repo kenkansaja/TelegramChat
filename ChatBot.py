@@ -4,7 +4,7 @@ from telebot import types
 
 from Messages import *
 from dataEgine import *
-from config import TOKEN, GROUP, CHANNEL, OWNER, PROJECT_NAME
+from config import TOKEN, GROUP, CHANNEL, OWNER
 
 access_token = TOKEN
 bot = telebot.TeleBot(access_token)

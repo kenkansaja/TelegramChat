@@ -25,10 +25,14 @@ m_send_some_messages = 'Bot tidak bisa meneruskan pesan dari bot\n\nThe bot coul
 
 m_has_not_dialog = 'Anda tidak sedang dalam obrolan\n\nYou are not in chat'
 
-dislike_str = '\U0001F44E Tidak Suka'
+dislike_str = '⛔ Exit'
 
-like_str = '\U0001F44D Suka'
+like_str = '📠 Kontak'
 
+user_id = message.from_user.id
+user_name = message.from_user.first_name
+rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
 
 def m_all_like (x):
-    return
+    return "rpk"
+

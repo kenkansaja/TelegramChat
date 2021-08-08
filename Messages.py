@@ -15,7 +15,7 @@ m_disconnect_user = 'Maaf sambungan telah terputus!\n\nSorry, the connection was
 
 m_failed = '❌ Terjadi kesalahan!\n\n❌ Loss happened'
 
-m_like = '✅ Pilihan yang bagus!\n\n✅ Great choice'
+m_like = '✅ Anda mengerimkan username kepada lawan bicara!\n\n✅ You send the username to the other person'
 
 m_dislike_user = 'Obrolan Telah Berakhir\n\nChat Has Ended'
 
@@ -27,7 +27,7 @@ m_has_not_dialog = 'Anda tidak sedang dalam obrolan\n\nYou are not in chat'
 
 dislike_str = '⛔ Exit'
 
-like_str = '📠 Kontak'
+like_str = '📠 Kirim Kontak'
 
 def m_all_like (x):
     return 'Nih kak' + 'username:' + str (x)

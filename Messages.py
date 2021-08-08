@@ -31,4 +31,4 @@ like_str = '\U0001F44D Suka'
 
 
 def m_all_like (x):
-    return 'Teman bicara menyukai Anda\n + Nama pengguna: + str (x) \nSemoga berhasil dengan komunikasi Anda!\nTerima kasih telah bersama kami!\n\nThe interlocutor likes you\n + Username: + str (x)\nGood luck with your communication!\nThanks for being with us!'
+    return "Teman bicara menyukai Anda\n + 'Nama pengguna:' + str (x) \nSemoga berhasil dengan komunikasi Anda!\nTerima kasih telah bersama kami!\n\nThe interlocutor likes you\n + 'Username:' + str (x) \nGood luck with your communication!\nThanks for being with us!"

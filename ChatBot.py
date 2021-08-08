@@ -9,7 +9,6 @@ from config import TOKEN, GROUP, CHANNEL, OWNER
 access_token = TOKEN
 bot = telebot.TeleBot(access_token)
 
-
 def inline_menu():
     """
     Create inline menu for new chat
@@ -226,4 +225,3 @@ if __name__ == '__main__':
     recovery_data()
     bot.stop_polling()
     bot.polling(none_stop=True)
-    print('BOT SUDAH AKTIF')

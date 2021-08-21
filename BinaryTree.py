@@ -175,10 +175,12 @@ class BinaryTree:
                     current_node.leftChild.parent = current_node.parent
                     current_node.parent.rightChild = current_node.leftChild
                 else:
-                    current_node.replaceNodeData(current_node.leftChild.key,
-                                                 current_node.leftChild.payload,
-                                                 current_node.leftChild.leftChild,
-                                                 current_node.leftChild.rightChild)
+                    current_node.replaceNodeData(
+                        current_node.leftChild.key,
+                        current_node.leftChild.payload,
+                        current_node.leftChild.leftChild,
+                        current_node.leftChild.rightChild,
+                    )
             else:
                 if current_node.is_left_child():
                     current_node.rightChild.parent = current_node.parent
@@ -187,10 +189,12 @@ class BinaryTree:
                     current_node.rightChild.parent = current_node.parent
                     current_node.parent.rightChild = current_node.rightChild
                 else:
-                    current_node.replaceNodeData(current_node.rightChild.key,
-                                                 current_node.rightChild.payload,
-                                                 current_node.rightChild.leftChild,
-                                                 current_node.rightChild.rightChild)
+                    current_node.replaceNodeData(
+                        current_node.rightChild.key,
+                        current_node.rightChild.payload,
+                        current_node.rightChild.leftChild,
+                        current_node.rightChild.rightChild,
+                    )
 
     def delete(self, key):
         if self.size > 1:
@@ -199,12 +203,12 @@ class BinaryTree:
                 self.remove(node_for_remove)
                 self.size = self.size - 1
             else:
-                raise KeyError('Error, node with key is not found')
+                raise KeyError("Error, node with key is not found")
         elif self.size == 1 and self.root.key == key:
             self.root = None
             self.size = 0
         else:
-            raise KeyError('Error, node with key is not found')
+            raise KeyError("Error, node with key is not found")
 
     def __delitem__(self, key):
         self.delete(key)

@@ -2,8 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from BinaryTree import BinaryTree
-from models import User, Contact, Base
-
+from models import Base, Contact, User
 
 free_users = BinaryTree()
 communications = {}
@@ -11,7 +10,7 @@ communications = {}
 in_users = 0
 out_users = 0
 
-engine = create_engine('sqlite:///Data.db')
+engine = create_engine("sqlite:///Data.db")
 Base.metadata.create_all(bind=engine)
 session = sessionmaker(bind=engine)
 
@@ -43,22 +42,22 @@ def add_users(chat=None, user_chat_id=None, username=None):
         return
 
     if in_users >= out_users:
-        free_users[user_id] = {'state': 0, 'ID': user_id, 'UserName': user_name}
+        free_users[user_id] = {"state": 0, "ID": user_id, "UserName": user_name}
         out_users = out_users + 1
     elif in_users < out_users:
-        free_users[user_id] = {'state': 1, 'ID': user_id, 'UserName': user_name}
+        free_users[user_id] = {"state": 1, "ID": user_id, "UserName": user_name}
         in_users = in_users + 1
 
     s = session()
     if len(s.query(User).filter(User.id == user_id).all()) > 0:
-        s.query(User).filter(User.id == user_id).update({'status': 0})
+        s.query(User).filter(User.id == user_id).update({"status": 0})
 
         s.commit()
         s.close()
         return
 
     if user_name is None:
-        user_name = 'anon'
+        user_name = "anon"
 
     s.add(User(id=user_id, username=user_name, like=False, status=0))
 
@@ -74,7 +73,7 @@ def delete_info(user_id):
     """
     global communications
 
-    tmp_id = communications[user_id]['UserTo']
+    tmp_id = communications[user_id]["UserTo"]
 
     communications.pop(user_id)
     communications.pop(tmp_id)
@@ -87,8 +86,8 @@ def delete_info(user_id):
         s.query(Contact).filter(Contact.userID == tmp_id).delete()
     s.commit()
 
-    s.query(User).filter(User.id == user_id).update({'status': 3, 'like': False})
-    s.query(User).filter(User.id == tmp_id).update({'status': 3, 'like': False})
+    s.query(User).filter(User.id == user_id).update({"status": 3, "like": False})
+    s.query(User).filter(User.id == tmp_id).update({"status": 3, "like": False})
 
     s.commit()
     s.close()
@@ -103,18 +102,26 @@ def add_communications(user_id, user_to_id):
     """
     global free_users
 
-    communications[user_id] = {'UserTo': user_to_id, 'UserName': free_users[user_to_id]['UserName'], 'like': False}
-    communications[user_to_id] = {'UserTo': user_id, 'UserName': free_users[user_id]['UserName'], 'like': False}
+    communications[user_id] = {
+        "UserTo": user_to_id,
+        "UserName": free_users[user_to_id]["UserName"],
+        "like": False,
+    }
+    communications[user_to_id] = {
+        "UserTo": user_id,
+        "UserName": free_users[user_id]["UserName"],
+        "like": False,
+    }
 
-    print(communications[user_id], ' ', communications[user_to_id])
+    print(communications[user_id], " ", communications[user_to_id])
 
     free_users.delete(user_id)
     free_users.delete(user_to_id)
 
     s = session()
 
-    s.query(User).filter(User.id == user_id).update({'status': 1})
-    s.query(User).filter(User.id == user_to_id).update({'status': 1})
+    s.query(User).filter(User.id == user_id).update({"status": 1})
+    s.query(User).filter(User.id == user_to_id).update({"status": 1})
 
     s.add(Contact(userID=user_id, userToID=user_to_id))
 
@@ -135,8 +142,16 @@ def recovery_data():
         first = s.query(User).filter(User.id == i.userID).first()
         second = s.query(User).filter(User.id == i.userToID).first()
 
-        communications[i.userID] = {'UserTo': second.id, 'UserName': second.username, 'like': second.like}
-        communications[i.userToID] = {'UserTo': first.id, 'UserName': first.username, 'like': first.like}
+        communications[i.userID] = {
+            "UserTo": second.id,
+            "UserName": second.username,
+            "like": second.like,
+        }
+        communications[i.userToID] = {
+            "UserTo": first.id,
+            "UserName": first.username,
+            "like": first.like,
+        }
 
     for i in s.query(User).filter(User.status == 0).all():
         add_users(user_chat_id=i.id, username=i.username)
@@ -150,11 +165,11 @@ def update_user_like(user_id):
     :param user_id: Chat id with user
     :return:
     """
-    communications[user_id]['like'] = True
+    communications[user_id]["like"] = True
 
     s = session()
 
-    s.query(User).filter(User.id == user_id).update({'like': True})
+    s.query(User).filter(User.id == user_id).update({"like": True})
 
     s.commit()
     s.close()

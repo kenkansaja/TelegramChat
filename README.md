@@ -23,6 +23,16 @@ Ini adalah repo untuk random chat bot atau biasa di kenal sebagai Anonymous Chat
 <b>
 <a href="https://ice-iota-kohl.vercel.app"><img src="https://img.shields.io/badge/BIKIN CUK-DI HEROKU-blue?style=plastic&logo=heroku&logoColor=red"width="310" height="50"/></a>
 </b>
+### VIA VPS
+
+```console
+kenkansaja@kenkansaja$ git clone https://github.com/kenkansaja/TelegramChat
+kenkansaja@kenkansaja$ cd TelegramChat
+kenkansaja@kenkansaja$ pip3 install -U -r requirements.txt
+kenkansaja@kenkansaja$ nano config.py
+kenkansaja@kenkansaja$ screen -S TelegramChat
+kenkansaja@kenkansaja$ python3 ChatBot.py
+```
 
 ### TEMUKAN KAMI DI TELEGRAM
 

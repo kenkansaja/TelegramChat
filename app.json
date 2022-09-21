@@ -20,5 +20,24 @@
       "description": "Isi dengan username channel kalian tanpa tanda @ kalau gak punya gak usah isi",
       "value": "musikkuchannel"
     }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
   }
 }

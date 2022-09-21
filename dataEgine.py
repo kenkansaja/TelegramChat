@@ -3,6 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from BinaryTree import BinaryTree
 from models import Base, Contact, User
+from config import DB_URI
 
 free_users = BinaryTree()
 communications = {}
@@ -10,7 +11,7 @@ communications = {}
 in_users = 0
 out_users = 0
 
-engine = create_engine("sqlite:///Data.db")
+engine = create_engine(DB_URI)
 Base.metadata.create_all(bind=engine)
 session = sessionmaker(bind=engine)
 

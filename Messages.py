@@ -28,9 +28,9 @@ m_send_some_messages = "Bot tidak bisa meneruskan pesan dari bot\n\nThe bot coul
 
 m_has_not_dialog = "Anda tidak sedang dalam obrolan\n\nYou are not in chat"
 
-dislike_str = "⛔ Exit"
+dislike_str = "👎 Tidak menyukai kamu"
 
-like_str = "📠 Kirim Kontak"
+like_str = "👍 Menyukai kamu"
 
 
 def m_all_like(x):

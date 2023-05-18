@@ -53,5 +53,5 @@ kenkansaja@kenkansaja$ python3 ChatBot.py
 * [KEN KAN](https://github.com/kenkansaja/TelegramChat)
 
 ## Bot Anon
-  [Anonymous Chat](t.me/Chatduabot) - Sumber kode di jual bagi yang minat hubungi [@pySmartDL](t.me/pySmartDL)
+  [Anonymous Chat](https://t.me/Chatduabot) - Sumber kode di jual bagi yang minat hubungi [@pySmartDL](https://t.me/pySmartDL)
 
